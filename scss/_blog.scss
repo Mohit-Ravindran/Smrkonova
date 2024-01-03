@@ -1,0 +1,72 @@
+.blog{
+    &__box{
+        margin: 5rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4rem;
+
+    }
+    &__card{
+        img{
+            border-radius: 1rem;
+        }
+    }
+    &__content{
+        display: flex;
+        padding: 0 2rem;
+        gap: 2rem;
+            margin: -3rem 0 0;
+    }
+    &__date{
+            background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1rem;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            h3{
+                color: $text;
+                font-size: 3.2rem;
+                font-weight: 600;
+                margin: 0;
+  font-family: 'Arimo', sans-serif;
+            }
+            p{
+                margin: 0;
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: $text;
+  font-family: 'Arimo', sans-serif;
+            }
+    }
+    &__para{
+            background: #333232;
+            padding: 2rem;
+            border-radius: 1rem;
+            flex: 1;
+            p{
+                color: $para;
+                font-size: 1.4rem;
+                font-weight: 400;
+  font-family: 'Arimo', sans-serif;
+  margin: 0 0 2rem;
+            }
+            h4{
+                font-size: 3.2rem;
+                font-weight: 500;
+                margin: 0 0 2rem;
+                color: $text;
+  font-family: 'Arimo', sans-serif;
+            }
+            a{
+                font-size: 1.4rem;
+                color: $para;
+                font-weight: 500;
+  font-family: 'Arimo', sans-serif;
+
+            }
+    }
+}

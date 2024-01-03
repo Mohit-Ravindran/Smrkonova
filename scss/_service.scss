@@ -1,0 +1,63 @@
+.service {
+  &__title {
+    h2 {
+      color: $text;
+      margin: 0 0 2rem;
+      font-size: 1.6rem;
+      font-family: "Arimo", sans-serif;
+    }
+  }
+  &__list{
+    margin: 5rem 0 0;
+    ul{
+        margin: 0;
+        li{
+            display: grid;
+            grid-template-columns: 0.5fr 1.6fr 2.5fr 1.2fr;
+                grid-column-gap: 7rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.15);
+                    padding: 5rem 0;
+
+                    &:last-child{
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+                    }
+
+        }
+    }
+  }
+  &__head{
+    h3{
+        color: $text;
+        margin: 0 0 2rem;
+        font-size: 3rem;
+        font-weight: 500;
+      font-family: "Arimo", sans-serif;
+    }
+  }
+  &__number{
+    font-size: 6rem;
+        line-height: 1;
+        -webkit-text-stroke: 1px $text;
+        color: transparent;
+        opacity: 0.3;
+      font-family: "Arimo", sans-serif;
+  }
+  &__content{
+    p{
+        color: $para;
+        font-size: 1.6rem;
+        margin: 0;
+        font-weight: 500;
+      font-family: "Arimo", sans-serif;
+    }
+  }
+  &__btn{
+    a{
+        color: $text;
+        font-size: 1.8rem;
+        font-weight: 500;
+      font-family: "Arimo", sans-serif;
+
+    }
+  }
+}

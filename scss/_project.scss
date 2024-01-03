@@ -1,0 +1,13 @@
+.project{
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
+        margin: 4rem 0 0;
+    }
+    &__card{
+        img{
+            border-radius: 1rem;
+        }
+    }
+}

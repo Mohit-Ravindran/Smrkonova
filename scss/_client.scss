@@ -1,0 +1,43 @@
+.client{
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        position: sticky;
+        top: 10rem;
+    }
+    &__content{
+        h3{
+            color: $text;
+            font-size: 6.4rem;
+            margin: 0 0 3rem;
+            font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+        }
+    }
+    &__rating{
+        padding: 10rem 0 7rem;
+        border-top: 1.6px solid #F00;
+    }
+    &__details{
+        padding: 0 0 0 2rem;
+        h3{
+         color: $text;
+         font-size: 1.6rem;
+         margin: 2rem 0 1rem;
+         font-weight: 700;  
+  font-family: 'Arimo', sans-serif;
+        }
+        p{
+            color: $para;
+            font-size: 1.4rem;
+            margin: 0;
+            font-weight: 400;
+  font-family: 'Arimo', sans-serif;
+        }
+    }
+    &__details.active{
+        border-left: 0.1rem solid $primary;
+    }
+
+}

@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Zen+Dots&display=swap");
+.header {
+  padding: 1.6rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #070707;
+}
+.header .navbar-brand img {
+  width: 20rem;
+}
+.header .navbar-expand-lg .navbar-nav .nav-link {
+  color: #F9F9F9;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
+}
+.header .navbar-nav {
+  gap: 2rem;
+}
+.header__end {
+  display: inline-flex;
+}
+.header__end a {
+  background-color: #FF0000;
+  padding: 1rem 3rem;
+  color: #F9F9F9;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.banner {
+  background-image: url(../assets/img/banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.banner__content {
+  display: flex;
+  align-items: initial;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.banner__content h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  margin: 0 0 3.6rem;
+  color: #F9F9F9;
+}
+.banner__content h1 span {
+  color: #FF0000;
+}
+.banner__content p {
+  color: #B0B0B0;
+  font-family: "Arimo", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  font-size: 500;
+}
+.banner__trust {
+  border-top: 2px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+  margin: 4rem 0 0;
+  display: flex;
+  align-items: center;
+}
+.banner__trust h4 {
+  color: #F9F9F9;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+  margin: 0 3rem 0 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.12);
+  padding: 2rem 3rem 2rem 0;
+  letter-spacing: 0.2rem;
+}
+.banner__trust ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 2rem 0;
+}
+
+.about__title h2 {
+  color: #F9F9F9;
+  margin: 0 0 2rem;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+}
+.about__content p {
+  color: #F9F9F9;
+  margin: 0;
+  font-size: 5.6rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+
+.service__title h2 {
+  color: #F9F9F9;
+  margin: 0 0 2rem;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+}
+.service__list {
+  margin: 5rem 0 0;
+}
+.service__list ul {
+  margin: 0;
+}
+.service__list ul li {
+  display: grid;
+  grid-template-columns: 0.5fr 1.6fr 2.5fr 1.2fr;
+  grid-column-gap: 7rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 5rem 0;
+}
+.service__list ul li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.service__head h3 {
+  color: #F9F9F9;
+  margin: 0 0 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+.service__number {
+  font-size: 6rem;
+  line-height: 1;
+  -webkit-text-stroke: 1px #F9F9F9;
+  color: transparent;
+  opacity: 0.3;
+  font-family: "Arimo", sans-serif;
+}
+.service__content p {
+  color: #B0B0B0;
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+.service__btn a {
+  color: #F9F9F9;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+
+.project__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin: 4rem 0 0;
+}
+.project__card img {
+  border-radius: 1rem;
+}
+
+.count {
+  background-image: url(../assets/img/shape.svg);
+  background-position: center center;
+  background-color: #F9F9F9;
+}
+.count__title h2 {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+}
+.count__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 4rem 0 0;
+}
+.count__card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+}
+.count__content h3 {
+  color: #070707;
+  font-size: 6rem;
+  margin: 0 0 0;
+  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+}
+.count__content p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  color: #070707;
+  font-family: "Arimo", sans-serif;
+}
+
+.blog__box {
+  margin: 5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.blog__card img {
+  border-radius: 1rem;
+}
+.blog__content {
+  display: flex;
+  padding: 0 2rem;
+  gap: 2rem;
+  margin: -3rem 0 0;
+}
+.blog__date {
+  background: linear-gradient(45deg, #02ebad 0%, #5a57fb 50%);
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.blog__date h3 {
+  color: #F9F9F9;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Arimo", sans-serif;
+}
+.blog__date p {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+}
+.blog__para {
+  background: #333232;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex: 1;
+}
+.blog__para p {
+  color: #B0B0B0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Arimo", sans-serif;
+  margin: 0 0 2rem;
+}
+.blog__para h4 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+}
+.blog__para a {
+  font-size: 1.4rem;
+  color: #B0B0B0;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+
+.footer__title h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 600;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+  margin: 0 0 3rem;
+  text-transform: uppercase;
+}
+.footer__post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer__post img {
+  border-radius: 1rem;
+  height: 7rem;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.footer__list ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__list ul li a {
+  font-size: 1.8rem;
+  color: #B0B0B0;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
+.footer__social ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  background-color: #FF0000;
+  padding: 1.6rem 0;
+}
+.copyright__content p {
+  color: #F9F9F9;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  margin: 0;
+}
+
+.client__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10rem;
+}
+.client__content h3 {
+  color: #F9F9F9;
+  font-size: 6.4rem;
+  margin: 0 0 3rem;
+  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+}
+.client__rating {
+  padding: 10rem 0 7rem;
+  border-top: 1.6px solid #F00;
+}
+.client__details {
+  padding: 0 0 0 2rem;
+}
+.client__details h3 {
+  color: #F9F9F9;
+  font-size: 1.6rem;
+  margin: 2rem 0 1rem;
+  font-weight: 700;
+  font-family: "Arimo", sans-serif;
+}
+.client__details p {
+  color: #B0B0B0;
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Arimo", sans-serif;
+}
+.client__details.active {
+  border-left: 0.1rem solid #FF0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Zen Dots", sans-serif !important;
+  color: #F9F9F9;
+  background-color: #070707 !important;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.padding {
+  padding: 8rem 0;
+}
+
+.sec-title p {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  color: #F9F9F9;
+}
+.sec-title h2 {
+  font-size: 5rem;
+  margin: 0;
+  color: #F9F9F9;
+  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

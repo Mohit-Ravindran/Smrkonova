@@ -1,0 +1,48 @@
+.count{
+    background-image: url(../assets/img/shape.svg);
+    background-position: center center;
+    background-color: $text;
+
+    &__title{
+        h2{
+            color: $bg;
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+
+        }
+    }
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: 4rem 0 0;
+
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+    &__content{
+        h3{
+            color: $bg;
+            font-size: 6rem;
+            margin: 0 0 0;
+            font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+
+        }
+        p{
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin: 0;
+            color: $bg;
+  font-family: 'Arimo', sans-serif;
+
+        }
+    }
+    
+}
