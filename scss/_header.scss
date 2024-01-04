@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   background-color: $bg;
+  z-index: 999;
   .navbar-brand {
     img {
       width: 20rem;

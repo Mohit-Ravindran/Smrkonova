@@ -6,6 +6,7 @@
   left: 0;
   right: 0;
   background-color: #070707;
+  z-index: 999;
 }
 .header .navbar-brand img {
   width: 20rem;
@@ -359,6 +360,54 @@
 }
 .client__details.active {
   border-left: 0.1rem solid #FF0000;
+}
+
+.contact__box {
+  margin: 5rem 0 0;
+}
+.contact__form {
+  padding: 4rem;
+  background: #333232;
+  border-radius: 1rem;
+}
+.contact__form input {
+  height: 4rem;
+}
+.contact__form input, .contact__form textarea {
+  background-color: transparent;
+  border: 0.1rem solid #595959;
+  color: #F9F9F9;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 600;
+}
+.contact__form input:focus, .contact__form textarea:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0.1rem solid #595959;
+  color: #F9F9F9;
+}
+.contact__form input::-moz-placeholder, .contact__form textarea::-moz-placeholder {
+  color: #767676;
+  font-weight: 400;
+}
+.contact__form input:-ms-input-placeholder, .contact__form textarea:-ms-input-placeholder {
+  color: #767676;
+  font-weight: 400;
+}
+.contact__form input::placeholder, .contact__form textarea::placeholder {
+  color: #767676;
+  font-weight: 400;
+}
+.contact__form button {
+  background-color: rgb(255, 0, 0) !important;
+  padding: 1rem 3rem;
+  color: rgb(249, 249, 249) !important;
+  font-size: 1.6rem;
+  font-family: Arimo, sans-serif;
+  font-weight: 500;
+  border: none !important;
+  border-radius: 0.5rem;
 }
 
 * {
