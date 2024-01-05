@@ -89,6 +89,28 @@
   gap: 5rem;
   padding: 2rem 0;
 }
+.banner__social-list {
+  position: relative;
+}
+.banner__social {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+}
+.banner__social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner__social ul li a {
+  width: 5rem;
+  height: 5rem;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .about__title h2 {
   color: #F9F9F9;

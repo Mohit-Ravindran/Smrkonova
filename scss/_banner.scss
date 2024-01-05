@@ -52,6 +52,30 @@
         padding: 2rem 0;
     }
   }
+  &__social-list{
+    position: relative;
+  }
+  &__social{
+    position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 0;
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      li{
+        a{
+          width: 5rem;
+          height: 5rem;
+          background-color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
 .about{
