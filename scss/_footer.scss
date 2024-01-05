@@ -1,4 +1,5 @@
 .footer{
+    background-color: #333232;
     &__title{
         h2{
             font-size: 1.4rem;
@@ -49,8 +50,9 @@
 }
 
 .copyright{
-    background-color: $primary;
     padding: 1.6rem 0;
+    background-color: #333232;
+    border-top: 0.1rem solid #474747;
     &__content{
         p{
             color: $text;

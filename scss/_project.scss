@@ -6,8 +6,9 @@
         margin: 4rem 0 0;
     }
     &__card{
-        img{
+        video{
             border-radius: 1rem;
+            object-fit: fill;
         }
     }
 }

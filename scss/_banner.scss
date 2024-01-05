@@ -9,7 +9,7 @@
     display: flex;
     align-items: initial;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - -86px);
     flex-direction: column;
     h1 {
       font-size: 8rem;
@@ -60,16 +60,13 @@
       color: $text;
       margin: 0 0 2rem;
       font-size: 1.6rem;
-      font-family: "Arimo", sans-serif;
     }
   }
   &__content{
     p{
       color: $text;
       margin: 0;
-      font-size: 5.6rem;
-      font-weight: 500;
-      font-family: "Arimo", sans-serif;
+      font-size: 3.8rem;
     }
   }
 }
