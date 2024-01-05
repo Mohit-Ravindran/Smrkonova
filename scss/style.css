@@ -196,6 +196,9 @@
   gap: 4rem;
   margin: 4rem 0 0;
 }
+.project__card img {
+  border-radius: 1rem;
+}
 .project__card video {
   border-radius: 1rem;
   -o-object-fit: fill;
@@ -497,9 +500,9 @@
   text-align: center;
 }
 .team__card {
-  border: 0.1rem solid #595959;
   padding: 4rem 2rem;
   border-radius: 1rem;
+  background-color: #333;
 }
 .team__content {
   margin: 3rem 0 0;

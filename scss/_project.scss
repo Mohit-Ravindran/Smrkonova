@@ -6,6 +6,9 @@
         margin: 4rem 0 0;
     }
     &__card{
+        img{
+            border-radius: 1rem;
+        }
         video{
             border-radius: 1rem;
             object-fit: fill;
