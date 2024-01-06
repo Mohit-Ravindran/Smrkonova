@@ -9,6 +9,9 @@
   .navbar-brand {
     img {
       width: 26rem;
+        @media #{$xss} {
+          width: 18rem;
+        }
     }
   }
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -16,6 +19,10 @@
     font-size: 1.4rem;
     // font-family: "Arimo", sans-serif;
     // font-weight: 500;
+
+    @media #{$xss}{
+      text-align: center;
+    }
 
     &:hover{
       color: $primary;
@@ -26,6 +33,11 @@
   }
   &__end {
     display: inline-flex;
+    @media #{$xss}{
+      display: block;
+      margin: 3rem 0 0;
+      text-align: center;
+    }
     a {
       background-color: $primary;
       padding: 1rem 3rem;
@@ -37,4 +49,10 @@
       border-radius: 0.5rem;
     }
   }
+  .navbar-collapse{
+    @media #{$xss}{
+    padding: 3rem 0;
+    }
+  }
 }
+

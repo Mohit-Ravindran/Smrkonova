@@ -45,6 +45,9 @@ img {
 }
 .padding{
   padding: 8rem 0;
+  @media #{$xss}{
+    padding: 4rem 0;
+  }
 }
 .sec-title{
   p{
@@ -54,6 +57,9 @@ img {
     color: $text;
     font-weight: 400;
     font-family: 'Arimo', sans-serif;
+    @media #{$xss} {
+      font-size: 1.4rem;
+    }
   }
   h2{
     font-size: 5rem;
@@ -61,5 +67,8 @@ img {
     color: $text;
     font-weight: 600;
     text-align: center;
+    @media #{$xss} {
+      font-size: 2.8rem;
+    }
   }
 }

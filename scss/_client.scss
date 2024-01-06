@@ -5,6 +5,9 @@
         gap: 6rem;
         position: sticky;
         top: 10rem;
+        @media #{$xss} {
+            display: none;
+        }
     }
     &__content{
         h3{
@@ -13,11 +16,19 @@
             margin: 0 0 3rem;
             font-weight: 600;
   font-family: 'Arimo', sans-serif;
+@media #{$xss} {
+    font-size: 2rem;
+    text-align: center;
+}
         }
     }
     &__rating{
         padding: 10rem 0 7rem;
         border-top: 1.6px solid #F00;
+        @media #{$xss} {
+                padding: 2rem 0 2rem;
+                text-align: center;
+        }
     }
     &__details{
         padding: 0 0 0 2rem;

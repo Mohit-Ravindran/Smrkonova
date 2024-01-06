@@ -19,6 +19,11 @@
       span {
         color: $primary;
       }
+      @media #{$xss}{
+        font-size: 2.8rem;
+        text-align: center;
+
+      }
     }
     p {
       color: $para;
@@ -26,6 +31,10 @@
       font-size: 2rem;
       margin: 0;
       font-size: 500;
+      @media #{$xss}{
+        font-size: 1.4rem;
+        text-align: center;
+      }
     }
   }
   &__trust{
@@ -34,6 +43,9 @@
     margin: 4rem 0 0;
     display: flex;
     align-items: center;
+      @media #{$xss} {
+        flex-direction: column;
+      }
     h4{
         color: $text;
         font-size: 1.2rem;
@@ -43,6 +55,12 @@
     border-right: 2px solid rgba(255, 255, 255, 0.12);
     padding: 2rem 3rem 2rem 0;
     letter-spacing: 0.2rem;
+    @media #{$xss}{
+      padding: 2rem 0 0;
+      border-right: none;
+      margin: 0;
+
+    }
     }
     ul{
         margin: 0;
@@ -50,6 +68,11 @@
         align-items: center;
         gap: 5rem;
         padding: 2rem 0;
+        flex-wrap: wrap;
+
+        @media #{$xss}{
+          gap: 2rem;
+        }
     }
   }
   &__social-list{
@@ -60,6 +83,9 @@
       top: 50%;
       transform: translate(0, -50%);
       right: 0;
+      @media #{$xss}{
+        display: none;
+      }
     ul{
       display: flex;
       flex-direction: column;
@@ -84,6 +110,10 @@
       color: $text;
       margin: 0 0 2rem;
       font-size: 1.6rem;
+
+      @media #{$xss}{
+        text-align: center;
+      }
     }
   }
   &__content{
@@ -91,6 +121,11 @@
       color: $text;
       margin: 0;
       font-size: 3.8rem;
+
+      @media #{$xss}{
+        font-size: 1.6rem;
+        text-align: center;
+      }
     }
   }
 }
