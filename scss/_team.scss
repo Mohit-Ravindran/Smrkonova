@@ -5,7 +5,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 3rem;
-        @media #{$xss}{
+        @media #{$xs}{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         }
@@ -17,13 +17,13 @@
             padding: 4rem 2rem;
             border-radius: 1rem;
             background-color: #333;
-            @media #{$xss}{
+            @media #{$xs}{
                 padding: 1rem;
             }
     }
     &__content{
         margin: 3rem 0 0;
-        @media #{$xss}{
+        @media #{$xs}{
             margin: 2rem 0 0;
         }
         h3{
@@ -31,7 +31,7 @@
             color: $text;
             margin: 0 0 1rem;
             text-align: center;
-            @media #{$xss}{
+            @media #{$xs}{
                 font-size: 1.4rem;
             }
         }
@@ -41,7 +41,7 @@
             margin: 0;
       font-family: "Arimo", sans-serif;
       text-align: center;
-      @media #{$xss}{
+      @media #{$xs}{
         font-size: 1.4rem;
       }
         }

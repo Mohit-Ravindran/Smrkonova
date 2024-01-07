@@ -5,7 +5,7 @@
         gap: 6rem;
         position: sticky;
         top: 10rem;
-        @media #{$xss} {
+        @media #{$xs} {
             display: none;
         }
     }
@@ -16,19 +16,25 @@
             margin: 0 0 3rem;
             font-weight: 600;
   font-family: 'Arimo', sans-serif;
-@media #{$xss} {
+@media #{$xs} {
     font-size: 2rem;
     text-align: center;
 }
+ @media #{$md} {
+    font-size: 2.4rem;
+ }
         }
     }
     &__rating{
         padding: 10rem 0 7rem;
         border-top: 1.6px solid #F00;
-        @media #{$xss} {
+        @media #{$xs} {
                 padding: 2rem 0 2rem;
                 text-align: center;
         }
+                 @media #{$md} {
+                    padding: 6rem 0;
+                 }
     }
     &__details{
         padding: 0 0 0 2rem;
@@ -38,6 +44,9 @@
          margin: 2rem 0 1rem;
          font-weight: 700;  
   font-family: 'Arimo', sans-serif;
+@media #{$md} {
+    font-size: 1.4rem;
+}
         }
         p{
             color: $para;
@@ -45,6 +54,9 @@
             margin: 0;
             font-weight: 400;
   font-family: 'Arimo', sans-serif;
+@media #{$md} {
+    font-size: 1.2rem;
+}
         }
     }
     &__details.active{

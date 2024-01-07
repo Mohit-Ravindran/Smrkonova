@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 4rem;
-                @media #{$xss} {
+                @media #{$xs} {
                         grid-template-columns: repeat(1, 1fr);
                     }
 
@@ -19,9 +19,12 @@
         padding: 0 2rem;
         gap: 2rem;
             margin: -3rem 0 0;
-            @media #{$xss} {
+            @media #{$xs} {
                 flex-direction: column;
             }
+                         @media #{$md} {
+                            flex-direction: column;
+                         }
     }
     &__date{
             background: $primary;
@@ -66,9 +69,12 @@
                 margin: 0 0 2rem;
                 color: $text;
   font-family: 'Arimo', sans-serif;
-    @media #{$xss} {
+    @media #{$xs} {
         font-size: 2rem;
     }
+         @media #{$md} {
+            font-size: 2rem;
+         }
             }
             a{
                 font-size: 1.4rem;

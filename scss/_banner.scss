@@ -19,10 +19,12 @@
       span {
         color: $primary;
       }
-      @media #{$xss}{
+      @media #{$xs}{
         font-size: 2.8rem;
         text-align: center;
-
+      }
+      @media #{$md}{
+        font-size: 4rem;
       }
     }
     p {
@@ -30,10 +32,13 @@
       font-family: "Arimo", sans-serif;
       font-size: 2rem;
       margin: 0;
-      font-size: 500;
-      @media #{$xss}{
+      font-weight: 500;
+      @media #{$xs}{
         font-size: 1.4rem;
         text-align: center;
+      }
+      @media #{$md} {
+        font-size: 1.6rem;
       }
     }
   }
@@ -43,7 +48,7 @@
     margin: 4rem 0 0;
     display: flex;
     align-items: center;
-      @media #{$xss} {
+      @media #{$xs} {
         flex-direction: column;
       }
     h4{
@@ -55,7 +60,7 @@
     border-right: 2px solid rgba(255, 255, 255, 0.12);
     padding: 2rem 3rem 2rem 0;
     letter-spacing: 0.2rem;
-    @media #{$xss}{
+    @media #{$xs}{
       padding: 2rem 0 0;
       border-right: none;
       margin: 0;
@@ -70,9 +75,12 @@
         padding: 2rem 0;
         flex-wrap: wrap;
 
-        @media #{$xss}{
+        @media #{$xs}{
           gap: 2rem;
         }
+      @media #{$md} {
+        gap: 3rem;
+      }
     }
   }
   &__social-list{
@@ -83,7 +91,7 @@
       top: 50%;
       transform: translate(0, -50%);
       right: 0;
-      @media #{$xss}{
+      @media #{$xs}{
         display: none;
       }
     ul{
@@ -111,7 +119,7 @@
       margin: 0 0 2rem;
       font-size: 1.6rem;
 
-      @media #{$xss}{
+      @media #{$xs}{
         text-align: center;
       }
     }
@@ -122,9 +130,12 @@
       margin: 0;
       font-size: 3.8rem;
 
-      @media #{$xss}{
+      @media #{$xs}{
         font-size: 1.6rem;
         text-align: center;
+      }
+      @media #{$md} {
+        font-size: 2rem;
       }
     }
   }

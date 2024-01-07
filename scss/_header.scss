@@ -9,7 +9,7 @@
   .navbar-brand {
     img {
       width: 26rem;
-        @media #{$xss} {
+        @media #{$xs} {
           width: 18rem;
         }
     }
@@ -20,7 +20,7 @@
     // font-family: "Arimo", sans-serif;
     // font-weight: 500;
 
-    @media #{$xss}{
+    @media #{$xs}{
       text-align: center;
     }
 
@@ -33,7 +33,7 @@
   }
   &__end {
     display: inline-flex;
-    @media #{$xss}{
+    @media #{$xs}{
       display: block;
       margin: 3rem 0 0;
       text-align: center;
@@ -50,7 +50,7 @@
     }
   }
   .navbar-collapse{
-    @media #{$xss}{
+    @media #{$xs}{
     padding: 3rem 0;
     }
   }

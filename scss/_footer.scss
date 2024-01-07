@@ -9,7 +9,7 @@
   font-family: 'Arimo', sans-serif;
   margin: 0 0 3rem;
   text-transform: uppercase;
-    @media #{$xss} {
+    @media #{$xs} {
         text-align: center;
     }
         }
@@ -31,7 +31,7 @@
             flex-direction: column;
             gap: 1rem;
             li{
-                @media #{$xss} {
+                @media #{$xs} {
                     text-align: center;
                 }
                 a{
@@ -51,7 +51,7 @@
             align-items: center;
             gap: 2rem;
             flex-wrap: wrap;
-            @media #{$xss} {
+            @media #{$xs} {
                 justify-content: center;
             }
         }

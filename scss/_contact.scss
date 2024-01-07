@@ -1,7 +1,7 @@
 .contact {
   &__box {
     margin: 7rem 0 0;
-    @media #{$xss}{
+    @media #{$xs}{
       margin: 2rem 0 0;
     }
   }
@@ -9,7 +9,7 @@
     padding: 4rem;
     background: #333232;
     border-radius: 1rem;
-      @media #{$xss} {
+      @media #{$xs} {
         padding: 2rem;
       }
 
@@ -45,7 +45,7 @@
       font-weight: 500;
       border: none !important;
       border-radius: 0.5rem;
-        @media #{$xss} {
+        @media #{$xs} {
           width: 100%;
         }
     }
@@ -58,7 +58,7 @@
   font-weight: 500;
   margin: 0 0 1rem;
   color: $para;
-  @media #{$xss}{
+  @media #{$xs}{
     font-size: 1.4rem;
     text-align: center;
 
@@ -68,7 +68,7 @@
   }
   &__list{
     margin: 3rem 0 0;
-      @media #{$xss} {
+      @media #{$xs} {
         margin: 3rem 0;
       }
     ul{

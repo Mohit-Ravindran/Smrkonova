@@ -45,7 +45,10 @@ img {
 }
 .padding{
   padding: 8rem 0;
-  @media #{$xss}{
+  @media #{$xs}{
+    padding: 4rem 0;
+  }
+  @media #{$md} {
     padding: 4rem 0;
   }
 }
@@ -57,7 +60,7 @@ img {
     color: $text;
     font-weight: 400;
     font-family: 'Arimo', sans-serif;
-    @media #{$xss} {
+    @media #{$xs} {
       font-size: 1.4rem;
     }
   }
@@ -67,8 +70,11 @@ img {
     color: $text;
     font-weight: 600;
     text-align: center;
-    @media #{$xss} {
+    @media #{$xs} {
       font-size: 2.8rem;
     }
+     @media #{$md} {
+      font-size: 4rem;
+     }
   }
 }

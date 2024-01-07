@@ -16,7 +16,7 @@
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin: 4rem 0 0;
-        @media #{$xss} {
+        @media #{$xs} {
             grid-template-columns: repeat(2,1fr);
             gap: 3rem 1rem;
         }
@@ -28,10 +28,14 @@
         gap: 0.8rem;
         justify-content: center;
         img{
-            @media #{$xss} {
+            @media #{$xs} {
                 width: 3rem;
                 gap: 1rem;
             }
+                        @media #{$md} {
+                            width: 3rem;
+                            gap: 1rem;
+                        }
         }
     }
     &__content{
@@ -44,6 +48,9 @@
   @media #{$xs}{
     font-size: 2.8rem;
   }
+  @media #{$md}{
+    font-size: 3rem;
+  }
 
         }
         p{
@@ -52,9 +59,12 @@
             margin: 0;
             color: $bg;
   font-family: 'Arimo', sans-serif;
-@media #{$xss} {
+@media #{$xs} {
     font-size: 1.2rem;
 }
+ @media #{$md} {
+    font-size: 1.4rem;
+ }
 
         }
     }
