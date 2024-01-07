@@ -691,6 +691,15 @@
 .client__details {
   padding: 0 0 0 2rem;
 }
+@media (max-width: 767px) {
+  .client__details {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 2rem;
+    align-items: center;
+  }
+}
 .client__details h3 {
   color: #F9F9F9;
   font-size: 1.6rem;
@@ -715,11 +724,29 @@
     font-size: 1.2rem;
   }
 }
+@media (max-width: 767px) {
+  .client__details p {
+    text-align: center;
+  }
+}
 .client__details.active {
   border-left: 0.1rem solid #FF0000;
 }
 .client__box {
   margin: 7rem 0 0;
+}
+
+.display-hide {
+  display: none;
+}
+.display-hide img {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .display-hide {
+    display: block;
+  }
 }
 
 .contact__box {
@@ -789,6 +816,11 @@
 }
 .contact__left {
   padding: 0 4rem 0 0;
+}
+@media (max-width: 767px) {
+  .contact__left {
+    padding: 0;
+  }
 }
 .contact__left p {
   font-size: 1.8rem;

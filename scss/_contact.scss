@@ -52,6 +52,9 @@
   }
   &__left{
     padding: 0 4rem 0 0;
+    @media #{$xs}{
+      padding: 0;
+    }
     p{
         font-size: 1.8rem;
   font-family: 'Arimo', sans-serif;
