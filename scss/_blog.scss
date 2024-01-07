@@ -75,6 +75,12 @@
          @media #{$md} {
             font-size: 2rem;
          }
+                  @media #{$lg} {
+                      font-size: 2rem;
+                  }
+                                  @media #{$lp} {
+                                      font-size: 2rem;
+                                  }
             }
             a{
                 font-size: 1.4rem;

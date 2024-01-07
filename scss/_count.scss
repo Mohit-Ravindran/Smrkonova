@@ -51,6 +51,9 @@
   @media #{$md}{
     font-size: 3rem;
   }
+  @media #{$lg} {
+      font-size: 4rem;
+  }
 
         }
         p{
