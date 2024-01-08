@@ -1,0 +1,40 @@
+.thank-you{
+    min-height: 100vh;
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    h2{
+        font-size: 3.6rem;
+        margin: 2rem 0 1rem;
+        text-align: center;
+        font-weight: 600;
+        color: $text;
+  font-family: 'Arimo', sans-serif;
+    }
+    p{
+        color: $text;
+        margin: 0 0 1rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+  font-family: 'Arimo', sans-serif;
+    }
+    &__btn{
+        margin: 3rem 0 0;
+        a{
+                background-color: #FF0000;
+                    padding: 1rem 3rem;
+                    color: #F9F9F9;
+                    font-size: 1.6rem;
+                    font-family: "Arimo", sans-serif;
+                    font-weight: 500;
+                    border: none;
+                    border-radius: 0.5rem
+        }
+    }
+}
+.thank-you-card{
+    text-align: center;
+}

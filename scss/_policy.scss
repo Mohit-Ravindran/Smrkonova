@@ -1,0 +1,45 @@
+.policy{
+    padding: 14rem 0 4rem;
+    h1{
+        color: $text;
+        font-size: 4.8rem;
+        margin: 0 0 3rem;
+        font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+    }
+    h4{
+        color: $text;
+        font-size: 3rem;
+        margin: 0 0 0.5rem;
+        font-weight: 600;
+  font-family: 'Arimo', sans-serif;
+    }
+    p{
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0 0 1.6rem;
+        color: $text;
+  font-family: 'Arimo', sans-serif;
+    }
+    h5{
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem;
+        color: $text;
+  font-family: 'Arimo', sans-serif;
+    }
+    ul{
+        margin: 0;
+        li{
+            font-size: 2rem;
+                font-weight: 400;
+                margin: 0 0 1rem;
+                color: $text;
+                font-family: 'Arimo', sans-serif;
+        }
+    }
+    a{
+        color: $primary;
+        font-weight: 600;
+    }
+}

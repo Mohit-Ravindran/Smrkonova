@@ -928,6 +928,94 @@
   gap: 2rem;
 }
 
+.policy {
+  padding: 14rem 0 4rem;
+}
+.policy h1 {
+  color: #F9F9F9;
+  font-size: 4.8rem;
+  margin: 0 0 3rem;
+  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+}
+.policy h4 {
+  color: #F9F9F9;
+  font-size: 3rem;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  font-family: "Arimo", sans-serif;
+}
+.policy p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 1.6rem;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+}
+.policy h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+}
+.policy ul {
+  margin: 0;
+}
+.policy ul li {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+}
+.policy a {
+  color: #FF0000;
+  font-weight: 600;
+}
+
+.thank-you {
+  min-height: 100vh;
+}
+.thank-you__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.thank-you h2 {
+  font-size: 3.6rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #F9F9F9;
+  font-family: "Arimo", sans-serif;
+}
+.thank-you p {
+  color: #F9F9F9;
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Arimo", sans-serif;
+}
+.thank-you__btn {
+  margin: 3rem 0 0;
+}
+.thank-you__btn a {
+  background-color: #FF0000;
+  padding: 1rem 3rem;
+  color: #F9F9F9;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.thank-you-card {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
