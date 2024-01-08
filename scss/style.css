@@ -938,12 +938,24 @@
   font-weight: 600;
   font-family: "Arimo", sans-serif;
 }
+@media (max-width: 767px) {
+  .policy h1 {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+}
 .policy h4 {
   color: #F9F9F9;
   font-size: 3rem;
   margin: 0 0 0.5rem;
   font-weight: 600;
   font-family: "Arimo", sans-serif;
+}
+@media (max-width: 767px) {
+  .policy h4 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }
 .policy p {
   font-size: 2rem;
@@ -952,12 +964,24 @@
   color: #F9F9F9;
   font-family: "Arimo", sans-serif;
 }
+@media (max-width: 767px) {
+  .policy p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
 .policy h5 {
   font-size: 2rem;
   font-weight: 600;
   margin: 0 0 0.5rem;
   color: #F9F9F9;
   font-family: "Arimo", sans-serif;
+}
+@media (max-width: 767px) {
+  .policy h5 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
 }
 .policy ul {
   margin: 0;
@@ -968,6 +992,11 @@
   margin: 0 0 1rem;
   color: #F9F9F9;
   font-family: "Arimo", sans-serif;
+}
+@media (max-width: 767px) {
+  .policy ul li {
+    font-size: 1.8rem;
+  }
 }
 .policy a {
   color: #FF0000;
