@@ -122,6 +122,10 @@
 }
 
 .about{
+  background-image: url(../assets/img/shape-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   &__title{
     h2{
       color: $text;
@@ -151,4 +155,19 @@
             }
     }
   }
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee h2 {
+  display: inline-block;
+      padding: 4rem 0;
+        background: #333232;
+        margin: 8rem 0;
+        overflow: hidden;
+        color: $text;
+        font-size: 3.8rem;
 }

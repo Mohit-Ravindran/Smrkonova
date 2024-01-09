@@ -33,15 +33,24 @@
 }
 .header__end {
   display: inline-flex;
+  align-items: center;
+  gap: 1rem;
 }
 @media (max-width: 767px) {
   .header__end {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 3rem 0 0;
     text-align: center;
   }
 }
-.header__end a {
+.header__end a img {
+  height: 4.4rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #FF0000;
+}
+.header__end a:nth-child(2) {
   background-color: #FF0000;
   padding: 1rem 3rem;
   color: #F9F9F9;
@@ -199,6 +208,12 @@
   justify-content: center;
 }
 
+.about {
+  background-image: url(../assets/img/shape-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
 .about__title h2 {
   color: #F9F9F9;
   margin: 0 0 2rem;
@@ -229,6 +244,21 @@
   .about__content p {
     font-size: 2rem;
   }
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee h2 {
+  display: inline-block;
+  padding: 4rem 0;
+  background: #333232;
+  margin: 8rem 0;
+  overflow: hidden;
+  color: #F9F9F9;
+  font-size: 3.8rem;
 }
 
 .service__title h2 {

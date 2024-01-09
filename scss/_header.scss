@@ -33,20 +33,33 @@
   }
   &__end {
     display: inline-flex;
+    align-items: center;
+    gap: 1rem;
     @media #{$xs}{
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 3rem 0 0;
       text-align: center;
     }
     a {
-      background-color: $primary;
-      padding: 1rem 3rem;
-      color: $text;
-      font-size: 1.6rem;
-      font-family: "Arimo", sans-serif;
-      font-weight: 500;
-      border: none;
-      border-radius: 0.5rem;
+      img{
+        height: 4.4rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid $primary;
+      }
+
+      &:nth-child(2){
+background-color: $primary;
+  padding: 1rem 3rem;
+  color: $text;
+  font-size: 1.6rem;
+  font-family: "Arimo", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+      }
+      
     }
   }
   .navbar-collapse{
