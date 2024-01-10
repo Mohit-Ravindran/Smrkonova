@@ -976,7 +976,7 @@
 }
 .policy h4 {
   color: #F9F9F9;
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin: 0 0 0.5rem;
   font-weight: 600;
   font-family: "Arimo", sans-serif;
@@ -988,9 +988,9 @@
   }
 }
 .policy p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  margin: 0 0 1.6rem;
+  margin: 0 0 2rem;
   color: #F9F9F9;
   font-family: "Arimo", sans-serif;
 }
@@ -1015,9 +1015,10 @@
 }
 .policy ul {
   margin: 0;
+  padding: 0 0 0 3rem;
 }
 .policy ul li {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin: 0 0 1rem;
   color: #F9F9F9;
@@ -1150,4 +1151,30 @@ img {
   .sec-title h2 {
     font-size: 4rem;
   }
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 2px solid #FF0000;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow,
+.grow-small {
+  transform: scale(4);
+  background: white;
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(3);
 }/*# sourceMappingURL=style.css.map */

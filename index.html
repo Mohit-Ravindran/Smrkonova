@@ -38,6 +38,8 @@
 </head>
 
 <body>
+  <div class="cursor"></div>
+
   <header class="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
@@ -101,14 +103,14 @@
         </div>
         <div class="banner__social">
           <ul class="list-unstyled">
-            <li><a href="https://www.quora.com/profile/Smrkonova-Softech-Solutions" target="_blank"><img
-                  src="./assets/img/social/facebook.svg" alt=""></a></li>
-            <li><a href="https://twitter.com/Smrkonova" target="_blank"><img src="./assets/img/social/twitter.svg"
-                  alt=""></a></li>
-            <li><a href=" https://www.linkedin.com/company/smrkonova-softech-solutions-llp/about/" target="_blank"><img
-                  src="./assets/img/social/linkedin.svg" alt=""></a></li>
-            <li><a href="https://www.instagram.com/smrkonova_softech_solutions/" target="_blank"><img
-                  src="./assets/img/social/instagram.svg" alt=""></a></li>
+            <li class="cursor-scale"><a href="https://www.quora.com/profile/Smrkonova-Softech-Solutions"
+                target="_blank"><img src="./assets/img/social/facebook.svg" alt=""></a></li>
+            <li class="cursor-scale"><a href="https://twitter.com/Smrkonova" target="_blank"><img
+                  src="./assets/img/social/twitter.svg" alt=""></a></li>
+            <li class="cursor-scale"><a href=" https://www.linkedin.com/company/smrkonova-softech-solutions-llp/about/"
+                target="_blank"><img src="./assets/img/social/linkedin.svg" alt=""></a></li>
+            <li class="cursor-scale"><a href="https://www.instagram.com/smrkonova_softech_solutions/"
+                target="_blank"><img src="./assets/img/social/instagram.svg" alt=""></a></li>
           </ul>
         </div>
       </div>
@@ -118,15 +120,16 @@
 
   </section>
   <section class="marquee">
-    <h2> * UI/UX Design * Prototyping * User Research * User Testing * Information Architecture * Wireframing *
-      Interaction Design * Visual Design * Usability Testing * Problem Solving</h2>
+    <h2 class="cursor-scale small"> * UI/UX Design * App Development * Web Development * Digital Marketing * Social
+      Media Maintenance * Wireframing *
+      Graphic Designing * Video Editing * DevOps Solutions * Problem Solving</h2>
   </section>
 
 
   <section class="about padding" id="about">
     <div class="container">
       <div class="about__title">
-        <h2>About</h2>
+        <h2 class="cursor-scale small">About</h2>
       </div>
       <div class="about__content">
         <p>At Smrkonova, our mission is to revolutionize the digital landscape by fusing innovation with expertise. We
@@ -141,7 +144,7 @@
   <section class="service padding" id="service">
     <div class="container">
       <div class="service__title">
-        <h2>OUR SERVICES</h2>
+        <h2 class="cursor-scale small">OUR SERVICES</h2>
       </div>
       <div class="service__list">
         <ul class="list-unstyled">
@@ -389,7 +392,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-8 col-md-12">
           <div class="sec-title">
-            <p>OUR WORK SHOWCASE</p>
+            <p class="cursor-scale small">OUR WORK SHOWCASE</p>
             <h2>Checkout our latest Projects</h2>
           </div>
         </div>
@@ -426,7 +429,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="count__title">
-            <h2>Fun Facts</h2>
+            <h2 class="cursor-scale small">Fun Facts</h2>
           </div>
 
         </div>
@@ -471,7 +474,7 @@
         <div class="col-xl-8 col-lg-8 col-md-12">
           <div class="sec-title">
             <!-- <p>HAVE QUESTIONS?</p> -->
-            <h2>Testimonial</h2>
+            <h2 class="cursor-scale small">Testimonial</h2>
           </div>
         </div>
       </div>
@@ -736,7 +739,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-8 col-md-12">
           <div class="sec-title">
-            <p>HAVE QUESTIONS?</p>
+            <p class="cursor-scale small">HAVE QUESTIONS?</p>
             <h2>Send us a Massage</h2>
           </div>
         </div>
@@ -807,7 +810,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-8 col-md-12">
           <div class="sec-title">
-            <p>OUR NEWS</p>
+            <p class="cursor-scale ">OUR NEWS</p>
             <h2>Checkout our latest News</h2>
           </div>
         </div>
@@ -936,6 +939,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="./main.js"></script>
   <script>
     const marquee = document.querySelector(".marquee");
     const marqueeContent = marquee.querySelector("h2");
@@ -960,6 +966,7 @@
 
     animateMarquee();
   </script>
+
 
 
 </body>
