@@ -93,6 +93,10 @@ img {
   transform-origin: center center;
   pointer-events: none;
   z-index: 1000;
+
+  @media #{$xs}{
+    display: none;
+  }
 }
 
 .grow,

@@ -33,3 +33,4 @@ cursorScale.forEach(link => {
     cursor.classList.remove('grow-small');
   });
 });
+
