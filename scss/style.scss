@@ -12,6 +12,7 @@
 @import "team";
 @import "policy";
 @import "thanks";
+@import "blogs";
 
 * {
   margin: 0;
@@ -109,4 +110,26 @@ img {
 
 .grow-small {
   transform: scale(3);
+}
+
+#custom-tab{
+  padding: 6rem 0;
+  .nav-pills{
+    justify-content: center;
+    gap: 3rem;
+    max-width: 30%;
+    background-color: #333232;
+    margin: 0 auto;
+    padding: 0.8rem;
+    border-radius: 3rem;
+  }
+  .nav-link{
+    font-size: 1.4rem;
+    color: #808080;
+  }
+  .nav-link.active{
+    background-color: transparent;
+    text-decoration: line-through;
+    color: #fff;
+  }
 }
