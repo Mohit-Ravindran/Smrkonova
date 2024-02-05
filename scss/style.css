@@ -1167,6 +1167,13 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.blogs__content h5 {
+  color: #B0B0B0;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
+}
 .blogs__tag {
   padding: 0.5rem;
   background: #333232;
@@ -1235,6 +1242,13 @@
   margin: 0 0 1rem;
   font-family: "Arimo", sans-serif;
   color: #B0B0B0;
+}
+.details__content h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  font-weight: 500;
+  font-family: "Arimo", sans-serif;
 }
 .details__list {
   margin: 2rem 0;

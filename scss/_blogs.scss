@@ -75,6 +75,13 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
         }
+        h5{
+            color: $para;
+            font-size: 1.2rem;
+            margin: 0 0 1rem;
+            font-weight: 500;
+            font-family: 'Arimo', sans-serif;
+        }
     }
     &__tag{
         padding: 0.5rem;
@@ -156,6 +163,13 @@
             font-family: 'Arimo', sans-serif;
             color: $para;
         }
+                                h5 {
+                                    color: #fff;
+                                    font-size: 1.2rem;
+                                    margin: 0 0 1rem;
+                                    font-weight: 500;
+                                    font-family: 'Arimo', sans-serif;
+                                }
     }
 
     &__list{
