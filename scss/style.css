@@ -1138,6 +1138,11 @@
   gap: 3rem;
   margin: 6rem 0 0;
 }
+@media (max-width: 767px) {
+  .blogs__box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .blogs__content {
   margin: 2rem 0 0;
 }
@@ -1445,11 +1450,13 @@ img {
 #custom-tab .nav-pills {
   justify-content: center;
   gap: 3rem;
-  max-width: 30%;
+  max-width: 36rem;
   background-color: #333232;
   margin: 0 auto;
   padding: 0.8rem;
   border-radius: 3rem;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 #custom-tab .nav-link {
   font-size: 1.4rem;
