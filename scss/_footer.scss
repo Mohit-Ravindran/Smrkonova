@@ -44,6 +44,11 @@
                     color: $para;
                     font-weight: 500;
   font-family: 'Arimo', sans-serif;
+  transition: all 0.3s;
+  &:hover{
+    color: #fff;
+    text-decoration: underline !important;
+  }
 
                 }
             }

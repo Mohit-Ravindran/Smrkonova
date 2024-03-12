@@ -47,7 +47,7 @@ img {
   height: auto;
 }
 .padding{
-  padding: 8rem 0;
+  padding: 6rem 0;
   @media #{$xs}{
     padding: 4rem 0;
   }
@@ -82,23 +82,23 @@ img {
   }
 }
 // custom cursor style
-.cursor {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
-  margin-top: -20px;
-  border-radius: 50%;
-  border: 2px solid $primary;
-  transition: transform 0.3s ease;
-  transform-origin: center center;
-  pointer-events: none;
-  z-index: 1000;
+// .cursor {
+//   position: fixed;
+//   width: 40px;
+//   height: 40px;
+//   margin-left: -20px;
+//   margin-top: -20px;
+//   border-radius: 50%;
+//   border: 2px solid $primary;
+//   transition: transform 0.3s ease;
+//   transform-origin: center center;
+//   pointer-events: none;
+//   z-index: 1000;
 
-  @media #{$xs}{
-    display: none;
-  }
-}
+//   @media #{$xs}{
+//     display: none;
+//   }
+// }
 
 .grow,
 .grow-small {
