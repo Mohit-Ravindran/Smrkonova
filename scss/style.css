@@ -71,13 +71,12 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  padding: 15rem 0 10rem;
 }
 .banner__content {
   display: flex;
   align-items: initial;
   justify-content: center;
-  height: calc(100vh + 86px);
   flex-direction: column;
 }
 .banner__content h1 {
@@ -263,20 +262,75 @@
 }
 
 .marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #333232;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+.marquee__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: slide-left 50s linear infinite;
+          animation: slide-left 50s linear infinite;
+}
+.marquee__content h2 {
+  font-size: 4rem;
+  margin: 0 50px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-decoration: underline;
+  color: #fff;
   white-space: nowrap;
-  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .marquee__content h2 {
+    font-size: 2rem;
+  }
+}
+.marquee__item {
+  position: relative;
+}
+.marquee__item::after {
+  position: absolute;
+  right: -15px;
+  top: 30%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  background: url(../assets/img/star.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  transform: translateY(-50%);
+  margin-top: 10px;
+}
+.marquee__item:nth-child(2n) h2 {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  border: none;
+  text-decoration: none;
 }
 
-.marquee h2 {
-  display: inline-block;
-  padding: 4rem 0;
-  background: #333232;
-  margin: 8rem 0;
-  overflow: hidden;
-  color: #F9F9F9;
-  font-size: 3.8rem;
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
+@keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .service__title h2 {
   color: #F9F9F9;
   margin: 0 0 2rem;

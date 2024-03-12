@@ -3,13 +3,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  // height: 100vh;
+  padding: 15rem 0 10rem;
 
   &__content {
     display: flex;
     align-items: initial;
     justify-content: center;
-    height: calc(100vh - -86px);
+    // height: calc(100vh - -86px);
     flex-direction: column;
     h1 {
       font-size: 8rem;
@@ -172,17 +173,74 @@
   }
 }
 
-.marquee {
+.marquee{
+
+
+        position: relative;
+          display: flex;
+          align-items: center;
+          background-color: #333232;
+          padding: 3rem 0;
+          overflow: hidden;
+  &__content{
+        display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: slide-left 50s linear infinite;
+    h2{
+font-size: 4rem;
+  margin: 0 50px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-decoration: underline;
+  color: #fff;
   white-space: nowrap;
-  overflow: hidden;
+
+  @media #{$xs}{
+    font-size: 2rem;
+  }
+    }
+
+  }
+  &__item{
+position: relative;
+&::after{
+  position: absolute;
+    right: -15px;
+    top: 30%;
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: url(../assets/img/star.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    transform: translateY(-50%);
+    margin-top: 10px;
 }
 
-.marquee h2 {
-  display: inline-block;
-      padding: 4rem 0;
-        background: #333232;
-        margin: 8rem 0;
-        overflow: hidden;
-        color: $text;
-        font-size: 3.8rem;
+&:nth-child(2n){
+  h2{
+  -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    border: none;
+    text-decoration: none;
+  }
 }
+  }
+}
+
+
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
