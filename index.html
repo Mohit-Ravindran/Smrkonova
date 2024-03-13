@@ -35,6 +35,9 @@
   <link rel="stylesheet" href="./scss/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body>
@@ -69,10 +72,16 @@
             </li>
           </ul>
           <div class="header__end">
-            <!-- <a target="_blank" href="https://www.fiverr.com/smrkonova?public_mode=true"><img
-                src="./assets/img/fiverr.svg" alt=""></a> -->
             <a href="https://api.whatsapp.com/send/?phone=919606654032&text&type=phone_number&app_absent=0"
-              target="_blank">Let’s Talk</a>
+              target="_blank">
+              <span>Let’s Chat</span>
+              <img src="./assets/img/social/whatsapp.svg" alt="">
+            </a>
+            <a href=""
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/support-smrkonova/30min'});return false;">
+              <span>Schedule Call</span>
+              <img src="./assets/img/social/meeting.svg" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -108,7 +117,7 @@
         <div class="banner__social">
           <ul class="list-unstyled">
             <li class="cursor-scale"><a href="https://www.quora.com/profile/Smrkonova-Softech-Solutions"
-                target="_blank"><img src="./assets/img/social/facebook.svg" alt=""></a></li>
+                target="_blank"><img src="./assets/img/social/quora.svg" alt=""></a></li>
             <li class="cursor-scale"><a href="https://twitter.com/Smrkonova" target="_blank"><img
                   src="./assets/img/social/twitter.svg" alt=""></a></li>
             <li class="cursor-scale"><a href=" https://www.linkedin.com/company/smrkonova-softech-solutions-llp/about/"
@@ -241,12 +250,15 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>Figma</span>
                   <img src="./assets/img/tools/figma 1.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Sketch</span>
                   <img src="./assets/img/tools/sketch.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Adobe XD</span>
                   <img src="./assets/img/tools/xd.png" alt="">
                 </div>
               </div>
@@ -270,13 +282,16 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>Flutter</span>
                   <img src="./assets/img/tools/flutter.png" alt="">
                 </div>
                 <div class="service__tool-list">
-                  <img src="./assets/img/tools/github.png" alt="">
+                  <span>Kotlin</span>
+                  <img src="./assets/img/tools/Kotlin.png" alt="">
                 </div>
                 <div class="service__tool-list">
-                  <img src="./assets/img/tools/vscode.png" alt="">
+                  <span>Android Studio</span>
+                  <img src="./assets/img/tools/android-studio.png" alt="">
                 </div>
               </div>
             </div>
@@ -299,13 +314,16 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
-                  <img src="./assets/img/tools/react.png" alt="">
+                  <span>HTML</span>
+                  <img src="./assets/img/tools/html.png" alt="">
                 </div>
                 <div class="service__tool-list">
-                  <img src="./assets/img/tools/github.png" alt="">
+                  <span>CSS</span>
+                  <img src="./assets/img/tools/css.png" alt="">
                 </div>
                 <div class="service__tool-list">
-                  <img src="./assets/img/tools/vscode.png" alt="">
+                  <span>Java Script</span>
+                  <img src="./assets/img/tools/js.png" alt="">
                 </div>
               </div>
             </div>
@@ -328,13 +346,20 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>Goole Analytics</span>
                   <img src="./assets/img/tools/google-analytics.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Goole Ads</span>
                   <img src="./assets/img/tools/google-ads.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>HubSpot</span>
                   <img src="./assets/img/tools/hubspot.png" alt="">
+                </div>
+                <div class="service__tool-list">
+                  <span>Trello</span>
+                  <img src="./assets/img/tools/trello.png" alt="">
                 </div>
               </div>
             </div>
@@ -357,12 +382,15 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>Hootsuite</span>
                   <img src="./assets/img/tools/hootsuite.png" alt="">
                 </div>
                 <div class="service__tool-list">
-                  <img src="./assets/img/tools/buffer.png" alt="">
+                  <span>Brandwatch</span>
+                  <img src="./assets/img/tools/brandwatch.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Sprout</span>
                   <img src="./assets/img/tools/Sprout.png" alt="">
                 </div>
               </div>
@@ -386,12 +414,15 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>Adobe Illustrator</span>
                   <img src="./assets/img/tools/ai.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Photo Shop</span>
                   <img src="./assets/img/tools/ps.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Blender</span>
                   <img src="./assets/img/tools/blender.png" alt="">
                 </div>
               </div>
@@ -415,12 +446,15 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>After Effects</span>
                   <img src="./assets/img/tools/after-effects.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Davinci</span>
                   <img src="./assets/img/tools/davinci.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Premiere Pro</span>
                   <img src="./assets/img/tools/premiere-pro.png" alt="">
                 </div>
               </div>
@@ -444,12 +478,15 @@
               <h3>Tools</h3>
               <div class="service__flex">
                 <div class="service__tool-list">
+                  <span>Jenkins</span>
                   <img src="./assets/img/tools/Jenkins.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Docker</span>
                   <img src="./assets/img/tools/docker.png" alt="">
                 </div>
                 <div class="service__tool-list">
+                  <span>Ansible</span>
                   <img src="./assets/img/tools/Ansible.png" alt="">
                 </div>
               </div>
@@ -491,7 +528,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="count__title">
-            <h2 class="cursor-scale small">Fun Facts</h2>
+            <h2 class="cursor-scale small">Key Achievements</h2>
           </div>
         </div>
       </div>
@@ -568,8 +605,9 @@
                 <div class="client__rating">
                   <img src="./assets/img/rating.png" alt="">
                 </div>
-                <h3>"Smrkonova's app development exceeded expectations. Innovative solutions for success. Highly
-                  recommended."</h3>
+                <h3>"Smrkonova team made our website so cool! They understand what we want and made it better than we
+                  imagined. Now, our
+                  customers love it too! Thank you Team! Great collaboration"</h3>
                 <div class="client__details display-hide">
                   <img src="./assets/img/client/john-smith.png" alt="">
                   <h3>John Smith</h3>
@@ -580,7 +618,9 @@
                 <div class="client__rating">
                   <img src="./assets/img/rating.png" alt="">
                 </div>
-                <h3>"Smrkonova's digital strategy was a game-changer. Boosted our online presence."</h3>
+                <h3>"I was confused about how to make my app, but Smrkonova helped me a lot. They are very friendly and
+                  made everything
+                  easy. Now, my app is super cool !"</h3>
                 <div class="client__details display-hide">
                   <img src="./assets/img/client/alice-thomson.png" alt="">
                   <h3>Alice Thompson</h3>
@@ -591,7 +631,9 @@
                 <div class="client__rating">
                   <img src="./assets/img/rating.png" alt="">
                 </div>
-                <h3>"Smrkonova's UI/UX design transformed our brand image. Exceptional work!"</h3>
+                <h3>"Wow! Smrkonova's digital marketing is amazing! Our sales went up so much after they helped us. They
+                  are the best!.Great
+                  job Team"</h3>
                 <div class="client__details display-hide">
                   <img src="./assets/img/client/michel.png" alt="">
                   <h3>Michael Rodriguez</h3>
@@ -970,7 +1012,7 @@
           <div class="footer__social">
             <ul class="list-unstyled">
               <li><a href="https://www.quora.com/profile/Smrkonova-Softech-Solutions" target="_blank"><img
-                    src="./assets/img/social/facebook.svg" alt=""></a></li>
+                    src="./assets/img/social/quora.svg" alt=""></a></li>
               <li><a href="https://www.instagram.com/smrkonova_softech_solutions/" target="_blank"><img
                     src="./assets/img/social/instagram.svg" alt=""></a></li>
               <li><a href="https://www.linkedin.com/company/smrkonova-softech-solutions-llp/about/" target="_blank"><img
