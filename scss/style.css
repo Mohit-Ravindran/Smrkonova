@@ -54,10 +54,15 @@
   padding: 1rem 2.4rem;
 }
 .header__end a span {
-  font-size: 500;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #fff;
   font-family: "Arimo", sans-serif;
+}
+@media (max-width: 1199px) {
+  .header__end a span {
+    display: none;
+  }
 }
 .header__end a:nth-child(1) {
   background-color: #29A71A;
