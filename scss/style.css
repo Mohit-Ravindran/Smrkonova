@@ -726,6 +726,7 @@
 
 .footer {
   background-color: #333232;
+  overflow: hidden;
 }
 .footer__title h2 {
   font-size: 1.4rem;
