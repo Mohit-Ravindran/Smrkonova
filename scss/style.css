@@ -446,6 +446,7 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin: 2rem 0 0;
 }
 @media (max-width: 767px) {
   .service__flex {
@@ -454,7 +455,6 @@
 }
 .service__tool-list {
   position: relative;
-  margin: 2rem 0 0;
   border-radius: 8px;
   border: 1px solid #454545;
   width: 5rem;
@@ -1192,6 +1192,11 @@
   color: #F9F9F9;
   font-family: "Arimo", sans-serif;
 }
+@media (max-width: 767px) {
+  .thank-you h2 {
+    font-size: 2.4rem;
+  }
+}
 .thank-you p {
   color: #F9F9F9;
   margin: 0 0 1rem;
@@ -1215,6 +1220,11 @@
 
 .thank-you-card {
   text-align: center;
+}
+@media (max-width: 767px) {
+  .thank-you-card img {
+    width: 60%;
+  }
 }
 
 .blogs {
