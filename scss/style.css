@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Zen+Dots&display=swap");
 .header {
-  padding: 1.6rem 0;
+  padding: 1.6rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #070707;
   z-index: 999;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 1.6rem 0;
+  }
 }
 .header .navbar-brand img {
   width: 26rem;
