@@ -645,7 +645,6 @@
   display: flex;
   padding: 0 2rem;
   gap: 2rem;
-  margin: -3rem 0 0;
 }
 @media (max-width: 767px) {
   .blog__content {
@@ -701,6 +700,11 @@
   margin: 0 0 2rem;
   color: #F9F9F9;
   font-family: "Arimo", sans-serif;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 @media (max-width: 767px) {
   .blog__para h4 {
@@ -727,6 +731,9 @@
   color: #B0B0B0;
   font-weight: 500;
   font-family: "Arimo", sans-serif;
+}
+.blog__para a:hover {
+  color: #FF0000;
 }
 
 .footer {
