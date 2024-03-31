@@ -90,9 +90,16 @@
       color: $para;
       font-weight: 500;
       font-family: "Arimo", sans-serif;
+      svg{
+        width: 2rem;
+      }
 
       &:hover{
         color: $primary;
+
+        svg{
+          stroke: $primary;
+        }
       }
     }
   }

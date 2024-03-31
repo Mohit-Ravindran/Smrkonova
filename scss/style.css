@@ -732,8 +732,14 @@
   font-weight: 500;
   font-family: "Arimo", sans-serif;
 }
+.blog__para a svg {
+  width: 2rem;
+}
 .blog__para a:hover {
   color: #FF0000;
+}
+.blog__para a:hover svg {
+  stroke: #FF0000;
 }
 
 .footer {
