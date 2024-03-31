@@ -726,19 +726,19 @@
     font-size: 2rem;
   }
 }
-.blog__para a {
+.blog__link {
   font-size: 1.4rem;
   color: #B0B0B0;
   font-weight: 500;
   font-family: "Arimo", sans-serif;
 }
-.blog__para a svg {
+.blog__link svg {
   width: 2rem;
 }
-.blog__para a:hover {
+.blog__link:hover {
   color: #FF0000;
 }
-.blog__para a:hover svg {
+.blog__link:hover svg {
   stroke: #FF0000;
 }
 
