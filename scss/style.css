@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #070707;
+  background-color: transparent;
   z-index: 999;
 }
 @media (max-width: 767px) {
@@ -19,6 +19,11 @@
 @media (max-width: 767px) {
   .header .navbar-brand img {
     width: 18rem;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .header .navbar-brand img {
+    width: 20rem;
   }
 }
 .header .navbar-expand-lg .navbar-nav .nav-link {
@@ -82,11 +87,47 @@
 }
 
 .banner {
-  background-image: url(../assets/img/banner.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 15rem 0 10rem;
+  height: 100vh;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .banner {
+    background-image: url(../assets/img/banner.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(100% 264.7% at 100% 50%, rgba(7, 7, 7, 0) 0%, rgba(7, 7, 7, 0.25) 36.53%, rgba(7, 7, 7, 0.71) 56.3%, rgba(7, 7, 7, 0.95) 76.06%, rgba(7, 7, 7, 0.95) 100%);
+  z-index: 1;
+  content: "";
+}
+@media (max-width: 991px) {
+  .banner::before {
+    content: unset;
+  }
+}
+.banner__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .banner__video {
+    display: none;
+  }
+}
+.banner__video video {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner__content {
   display: flex;
@@ -95,7 +136,7 @@
   flex-direction: column;
 }
 .banner__content h1 {
-  font-size: 8rem;
+  font-size: 4.2rem;
   font-weight: 600;
   margin: 0 0 3.6rem;
   color: #F9F9F9;
@@ -111,7 +152,8 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner__content h1 {
-    font-size: 4rem;
+    font-size: 4.2rem;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -119,15 +161,10 @@
     font-size: 4rem;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  .banner__content h1 {
-    font-size: 4.8rem;
-  }
-}
 .banner__content p {
   color: #B0B0B0;
   font-family: "Arimo", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin: 0;
   font-weight: 500;
 }
@@ -140,6 +177,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner__content p {
     font-size: 1.6rem;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -154,7 +192,7 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .banner__trust {
     flex-direction: column;
   }
@@ -169,7 +207,7 @@
   padding: 2rem 3rem 2rem 0;
   letter-spacing: 0.2rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .banner__trust span {
     padding: 2rem 0 0;
     border-right: none;
@@ -207,14 +245,25 @@
 }
 .banner__social-list {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 3rem;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .banner__social-list {
+    padding: unset;
+  }
 }
 .banner__social {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: 0;
+  right: 3rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .banner__social {
     display: none;
   }
@@ -277,14 +326,16 @@
 }
 
 .marquee {
-  position: relative;
+  position: absolute;
+  bottom: 2rem;
   display: flex;
   align-items: center;
-  background-color: #333232;
+  background-color: hsla(0deg, 0%, 0%, 0.8);
   padding: 3rem 0;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
+  z-index: 2;
 }
 .marquee__content {
   display: flex;
@@ -294,7 +345,7 @@
           animation: slide-left 50s linear infinite;
 }
 .marquee__content h2 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   margin: 0 50px;
   font-weight: 900;
   line-height: 1.4;
@@ -348,6 +399,11 @@
     transform: translateX(-100%);
   }
 }
+.header.fixed {
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
 .service__title h2 {
   color: #F9F9F9;
   margin: 0 0 2rem;

@@ -58,7 +58,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
@@ -106,18 +106,15 @@
     </nav>
   </header>
   <section class="banner">
-    <div class="container">
+    <div class="container-fluid">
       <div class="banner__social-list">
         <div class="row">
-          <div class="col-md-10">
+          <div class="col-md-12 col-lg-8 col-xl-7 col-xxl-5">
             <div class="banner__content">
-              <h1><span>Innovate. Elevate.</span><br> Your Digital Future Starts Here.</h1>
+              <h1><span>Innovate. Elevate.</span><br> Your Digital Future <br> Starts Here.</h1>
               <p>At Smrkonova, we're dedicated in transforming your concepts into digital brilliance. From captivating
                 designs to robust
-                apps and websites, coupled with expert digital marketing, we offer comprehensive solutions. Let our
-                enthusiastic team
-                actualize your vision. Prepare for unprecedented success, as creativity intersects with cutting-edge
-                technology.</p>
+                apps and websites, coupled with expert digital marketing, we offer comprehensive solutions.</p>
               <div class="banner__trust">
                 <span>You can trust us for</span>
                 <ul class="list-unstyled">
@@ -150,76 +147,82 @@
 
 
     </div>
+    <div class="banner__video">
+      <video width="100%" autoplay loop muted>
+        <source src="./assets/videos/banner-bg.mp4" type="video/mp4">
+      </video>
+    </div>
 
+    <div class="marquee">
+      <div class="marquee__content">
+        <div class="marquee__item">
+          <h2>UI/UX Design</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>App Development</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Web Development</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Digital Marketing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Social
+            Media Maintenance</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Wireframing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Graphic Designing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Video Editing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>DevOps Solutions</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Problem Solving</h2>
+        </div>
+      </div>
+      <div class="marquee__content">
+        <div class="marquee__item">
+          <h2>UI/UX Design</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>App Development</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Web Development</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Digital Marketing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Social
+            Media Maintenance</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Wireframing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Graphic Designing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Video Editing</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>DevOps Solutions</h2>
+        </div>
+        <div class="marquee__item">
+          <h2>Problem Solving</h2>
+        </div>
+      </div>
+    </div>
   </section>
-  <div class="marquee">
-    <div class="marquee__content">
-      <div class="marquee__item">
-        <h2>UI/UX Design</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>App Development</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Web Development</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Digital Marketing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Social
-          Media Maintenance</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Wireframing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Graphic Designing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Video Editing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>DevOps Solutions</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Problem Solving</h2>
-      </div>
-    </div>
-    <div class="marquee__content">
-      <div class="marquee__item">
-        <h2>UI/UX Design</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>App Development</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Web Development</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Digital Marketing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Social
-          Media Maintenance</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Wireframing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Graphic Designing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Video Editing</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>DevOps Solutions</h2>
-      </div>
-      <div class="marquee__item">
-        <h2>Problem Solving</h2>
-      </div>
-    </div>
-  </div>
+
   <section class="about padding" id="about">
     <div class="container">
       <div class="about__title">
@@ -894,6 +897,18 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      var headerOffset = header.offsetTop;
+      if (window.pageYOffset > headerOffset) {
+        header.classList.add('fixed');
+      } else {
+        header.classList.remove('fixed');
+      }
+    });
+  </script>
 
 
 
