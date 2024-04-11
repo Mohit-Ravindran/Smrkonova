@@ -82,7 +82,7 @@
 }
 
 .banner {
-  background-image: url(../assets/img/banner.png);
+  background-image: url(../assets/img/banner.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -238,7 +238,7 @@
 }
 
 .about {
-  background-image: url(../assets/img/shape-1.png);
+  background-image: url(../assets/img/shape-1.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
