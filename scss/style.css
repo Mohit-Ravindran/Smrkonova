@@ -159,7 +159,7 @@
     flex-direction: column;
   }
 }
-.banner__trust h4 {
+.banner__trust span {
   color: #F9F9F9;
   font-size: 1.2rem;
   font-weight: 500;
@@ -170,7 +170,7 @@
   letter-spacing: 0.2rem;
 }
 @media (max-width: 767px) {
-  .banner__trust h4 {
+  .banner__trust span {
     padding: 2rem 0 0;
     border-right: none;
     margin: 0;
