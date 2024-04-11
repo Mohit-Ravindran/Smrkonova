@@ -232,6 +232,10 @@
           white-space: nowrap;
           z-index: 2;
 
+          @media #{$xs}{
+            bottom: 4rem;
+          }
+
   &__content{
         display: flex;
           align-items: center;
