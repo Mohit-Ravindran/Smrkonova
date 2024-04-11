@@ -283,6 +283,8 @@
   background-color: #333232;
   padding: 3rem 0;
   overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
 }
 .marquee__content {
   display: flex;
