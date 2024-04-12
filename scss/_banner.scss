@@ -188,9 +188,10 @@
   background-position: right;
   &__title{
     h2{
-      color: $text;
+    color: #F9F9F9;
       margin: 0 0 2rem;
       font-size: 1.6rem;
+      text-transform: uppercase;
 
       @media #{$xs}{
         text-align: center;
