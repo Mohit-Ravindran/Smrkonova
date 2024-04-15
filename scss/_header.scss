@@ -85,7 +85,6 @@
 
 nav .wrapper {
   position: relative;
-  max-width: 1400px;
   padding: 0px 30px;
   height: 70px;
   line-height: 70px;
@@ -117,6 +116,10 @@ nav .wrapper {
   padding: 9px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
+
+  @media #{$lp}{
+    padding: 9px 10px;
+  }
 }
 
 .nav-links li a:hover {
@@ -371,11 +374,22 @@ nav input {
       right: 0;
       width: 100%;
       background: transparent;
+      padding: 1rem 0;
   &__logo{
     img{
-    width: 20rem;
+    width: 30rem;
+    @media #{$lp} {
+        width: 25rem;
+      }
 
-    @media #{$xss}{
+    @media #{$md}{
+      width: 20rem;
+    }
+        @media #{$lg} {
+          width: 18rem;
+        }
+
+    @media #{$xs}{
       width: 14rem;
     }
     }
