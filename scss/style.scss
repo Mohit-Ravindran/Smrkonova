@@ -12,6 +12,7 @@
 @import "policy";
 @import "thanks";
 @import "blogs";
+@import "product";
 
 * {
   margin: 0;
@@ -80,35 +81,8 @@ img {
      }
   }
 }
-// custom cursor style
-// .cursor {
-//   position: fixed;
-//   width: 40px;
-//   height: 40px;
-//   margin-left: -20px;
-//   margin-top: -20px;
-//   border-radius: 50%;
-//   border: 2px solid $primary;
-//   transition: transform 0.3s ease;
-//   transform-origin: center center;
-//   pointer-events: none;
-//   z-index: 1000;
-
-//   @media #{$xs}{
-//     display: none;
-//   }
-// }
-
-.grow,
-.grow-small {
-  transform: scale(4) ;
-  background: white;
-  mix-blend-mode: difference;
-  border: none;
-}
-
-.grow-small {
-  transform: scale(3);
+main{
+  min-height: 100vh;
 }
 
 #custom-tab{
@@ -132,5 +106,11 @@ img {
     background-color: transparent;
     text-decoration: line-through;
     color: #fff;
+  }
+}
+
+.header.fixed{
+  header{
+    background-color: #000;
   }
 }

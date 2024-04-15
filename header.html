@@ -12,53 +12,68 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="./assets/img/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <img src="./assets/img/icons/menu.svg" alt="">
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#service">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://smrkonova.com/blog/" target="_blank">Blog</a>
-                        </li>
-                    </ul>
-                    <div class="header__end">
-                        <a href="https://api.whatsapp.com/send/?phone=919606654032&text&type=phone_number&app_absent=0"
-                            target="_blank">
-                            <span>Let’s Chat</span>
-                            <img src="./assets/img/social/whatsapp.svg" alt="">
-                        </a>
-                        <a href=""
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/support-smrkonova/30min'});return false;">
-                            <span>Schedule Call</span>
-                            <img src="./assets/img/social/meeting.svg" alt="">
-                        </a>
-                    </div>
+        <nav>
+            <div class="wrapper">
+                <div class="header__logo"><a href="/">
+                        <img src="./assets/img/logo.png" alt="UI/UX design">
+                    </a></div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                    <label for="close-btn" class="btn close-btn">
+                        <img src="./assets/img/icons/close.svg" alt="">
+                    </label>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">services</a></li>
+                    <li>
+                        <a href="#" class="desktop-item">Products <img src="./assets/img/icons/down.svg" alt=""></a>
+                        <input type="checkbox" id="showDrop">
+                        <label for="showDrop" class="mobile-item">Products <img src="./assets/img/icons/down.svg"
+                                alt=""></label>
+                        <ul class="drop-menu list-unstyled">
+                            <li><a href="healthcare.html">Booking - Healthcare</a></li>
+                            <li><a href="#">Rental - Tools</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="header__end">
+                    <a href="https://api.whatsapp.com/send/?phone=919606654032&text&type=phone_number&app_absent=0"
+                        target="_blank">
+                        <span>Let’s Chat</span>
+                        <img src="./assets/img/social/whatsapp.svg" alt="web development">
+                    </a>
+                    <a href=""
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/support-smrkonova/30min'});return false;">
+                        <span>Schedule Call</span>
+                        <img src="./assets/img/social/meeting.svg" alt="digital marketing">
+                    </a>
                 </div>
+                <label for="menu-btn" class="btn menu-btn">
+                    <img src="./assets/img/icons/menu.svg" alt="">
+                </label>
             </div>
         </nav>
     </header>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('header');
+            var headerOffset = header.offsetTop;
+            if (window.pageYOffset > headerOffset) {
+                header.classList.add('fixed');
+            } else {
+                header.classList.remove('fixed');
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
